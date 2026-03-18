@@ -1,0 +1,5 @@
+node_modules/
+target/
+backend/target/
+.next/
+.DS_Store

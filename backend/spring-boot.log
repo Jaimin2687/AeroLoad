@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.aeroload:backend >------------------------
+[INFO] Building AeroLoad 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.4:run (default-cli) > test-compile @ backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ backend ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ backend ---
+[INFO] skip non existing resourceDirectory /Users/jaimin/AeroLoad/backend/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.4:run (default-cli) < test-compile @ backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.4:run (default-cli) @ backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2026-03-18T18:37:38.986+05:30  INFO 37857 --- [aeroload] [           main] com.aeroload.AeroLoadApplication         : Starting AeroLoadApplication using Java 25.0.2 with PID 37857 (/Users/jaimin/AeroLoad/backend/target/classes started by jaimin in /Users/jaimin/AeroLoad/backend)
+2026-03-18T18:37:38.987+05:30  INFO 37857 --- [aeroload] [           main] com.aeroload.AeroLoadApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T18:37:39.277+05:30  INFO 37857 --- [aeroload] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T18:37:39.301+05:30  INFO 37857 --- [aeroload] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/jaimin/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.19/tomcat-embed-core-10.1.19.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-03-18T18:37:39.544+05:30  INFO 37857 --- [aeroload] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-18T18:37:39.551+05:30  INFO 37857 --- [aeroload] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T18:37:39.551+05:30  INFO 37857 --- [aeroload] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-18T18:37:39.579+05:30  INFO 37857 --- [aeroload] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T18:37:39.580+05:30  INFO 37857 --- [aeroload] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 568 ms
+2026-03-18T18:37:39.663+05:30  INFO 37857 --- [aeroload] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T18:37:39.685+05:30  INFO 37857 --- [aeroload] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-18T18:37:39.699+05:30  INFO 37857 --- [aeroload] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T18:37:39.815+05:30  INFO 37857 --- [aeroload] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T18:37:39.826+05:30  INFO 37857 --- [aeroload] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T18:37:39.926+05:30  INFO 37857 --- [aeroload] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@774d8276
+2026-03-18T18:37:39.927+05:30  INFO 37857 --- [aeroload] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T18:37:39.959+05:30  WARN 37857 --- [aeroload] [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-03-18T18:37:40.391+05:30  INFO 37857 --- [aeroload] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T18:37:40.498+05:30  INFO 37857 --- [aeroload] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T18:37:40.702+05:30  WARN 37857 --- [aeroload] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T18:37:40.870+05:30  INFO 37857 --- [aeroload] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-18T18:37:40.876+05:30  INFO 37857 --- [aeroload] [           main] com.aeroload.AeroLoadApplication         : Started AeroLoadApplication in 2.069 seconds (process running for 2.227)
+2026-03-18T18:37:58.858+05:30  INFO 37857 --- [aeroload] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-18T18:37:58.858+05:30  INFO 37857 --- [aeroload] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-18T18:37:58.859+05:30  INFO 37857 --- [aeroload] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
